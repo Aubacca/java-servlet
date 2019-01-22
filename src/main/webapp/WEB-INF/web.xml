@@ -1,0 +1,51 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+  <display-name>Archetype Created Web Application</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+  <icon>
+    <small-icon>image/iconSmall.gif</small-icon>
+  </icon>
+
+  <servlet>
+    <servlet-name>watermelon</servlet-name>
+    <servlet-class>ch.renhor.servlets.SimpleServlet</servlet-class>
+    <init-param>
+      <param-name>version-from-xml</param-name>
+      <param-value>2.2.2</param-value>
+    </init-param>
+    <init-param>
+      <param-name>tool-from-xml</param-name>
+      <param-value>6.6.6</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>watermelon</servlet-name>
+    <url-pattern>/simple/SimpleServlet</url-pattern>
+  </servlet-mapping>
+  <init-param>
+    <param-name>version-from-xml</param-name>
+    <param-value>9.5.1</param-value>
+  </init-param>
+
+  <servlet>
+    <servlet-name>watermelon2</servlet-name>
+    <jsp-file>scopes.jsp</jsp-file>
+    <init-param>
+      <param-name>version-from-xml</param-name>
+      <param-value>3.3.3</param-value>
+    </init-param>
+  </servlet>
+
+</web-app>
